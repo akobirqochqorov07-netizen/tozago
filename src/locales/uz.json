@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "services": "Xizmatlar",
+        "pricing": "Tariflar",
+        "howItWorks": "Qanday ishlaydi",
+        "signIn": "Kirish",
+        "getStarted": "Boshlash"
+    },
+    "hero": {
+        "badge": "Toshkentda aqlli utilizatsiya",
+        "title": "Mashaqqatsiz tozalik",
+        "subtitle": "O'zbekistonda obuna asosida axlatni muntazam olib ketish va saralash bo'yicha birinchi xizmat. Vaqtingizni tejang va ekologiyaga yordam bering.",
+        "cta": "Obuna bo'lish"
+    },
+    "problem": {
+        "title": "Axlatdan charchadingizmi?",
+        "desc1": "Hovlidagi to'lib toshgan qutilar",
+        "desc2": "O'zingiz saralash va olib chiqish zarurati",
+        "desc3": "Maishiy ikir-chikirlarga shaxsiy vaqtni sarflash"
+    },
+    "solution": {
+        "title": "Biz buni o'z zimmamizga olamiz",
+        "desc": "TozaGo axlatingizni qulay jadval bo'yicha to'g'ridan-to'g'ri eshikingizdan olib ketadi."
+    },
+    "features": {
+        "title": "Nega TozaGoni tanlashadi",
+        "f1_title": "Saralash",
+        "f1_desc": "Qayta ishlanadigan materiallarni o'zimiz saralaymiz",
+        "f2_title": "Obuna",
+        "f2_desc": "Oyiga bir marta qulay to'lov",
+        "f3_title": "Qulaylik",
+        "f3_desc": "Yo'lakda paketlar yo'q"
+    },
+    "how": {
+        "title": "Obuna qanday ishlaydi",
+        "step1": "Ariza qoldiring",
+        "step2": "Konteynerlarni oling",
+        "step3": "Biz axlatni haftasiga 3 marta olib ketamiz"
+    },
+    "pricing": {
+        "title": "Oddiy va tushunarli tariflar",
+        "basic_title": "Basic",
+        "basic_price": "50 000 UZS/oy",
+        "basic_desc": "Haftada 2 marta olib ketish",
+        "standard_title": "Standard",
+        "standard_price": "80 000 UZS/oy",
+        "standard_desc": "Haftada 3 marta + Eko-bonuslar",
+        "premium_title": "Premium",
+        "premium_price": "120 000 UZS/oy",
+        "premium_desc": "Har kuni olib ketish + To'liq saralash"
+    },
+    "cta": {
+        "title": "Shaharni tozaroq qilishga tayyormisiz?",
+        "button": "Hozir qo'shilish"
+    },
+    "footer": {
+        "rights": "© 2026 TozaGo. Barcha huquqlar himoyalangan."
+    }
+}

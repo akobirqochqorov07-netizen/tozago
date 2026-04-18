@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "services": "Services",
+        "pricing": "Pricing",
+        "howItWorks": "How it works",
+        "signIn": "Sign In",
+        "getStarted": "Get Started"
+    },
+    "hero": {
+        "badge": "Smart disposal in Tashkent",
+        "title": "Effortless Cleanliness",
+        "subtitle": "Uzbekistan's first subscription-based regular waste collection and sorting service. Save time and help the environment.",
+        "cta": "Subscribe Now"
+    },
+    "problem": {
+        "title": "Tired of Trash?",
+        "desc1": "Overflowing bins in the yard",
+        "desc2": "Having to sort and dispose yourself",
+        "desc3": "Wasting personal time on chores"
+    },
+    "solution": {
+        "title": "We Take Care of It",
+        "desc": "TozaGo collects your trash right from your door according to a convenient schedule."
+    },
+    "features": {
+        "title": "Why Choose TozaGo",
+        "f1_title": "Sorting",
+        "f1_desc": "We sort recyclables ourselves",
+        "f2_title": "Subscription",
+        "f2_desc": "Convenient once-a-month payment",
+        "f3_title": "Comfort",
+        "f3_desc": "No bags in the hallway"
+    },
+    "how": {
+        "title": "How Subscription Works",
+        "step1": "Leave a request",
+        "step2": "Receive containers",
+        "step3": "We collect waste 3 times a week"
+    },
+    "pricing": {
+        "title": "Simple and Clear Pricing",
+        "basic_title": "Basic",
+        "basic_price": "50,000 UZS/mo",
+        "basic_desc": "Collection 2 times a week",
+        "standard_title": "Standard",
+        "standard_price": "80,000 UZS/mo",
+        "standard_desc": "Collection 3 times a week + Eco-bonuses",
+        "premium_title": "Premium",
+        "premium_price": "120,000 UZS/mo",
+        "premium_desc": "Daily collection + Turnkey sorting"
+    },
+    "cta": {
+        "title": "Ready to Make the City Cleaner?",
+        "button": "Join Now"
+    },
+    "footer": {
+        "rights": "© 2026 TozaGo. All rights reserved."
+    }
+}
