@@ -11,7 +11,9 @@
         "badge": "Toshkentda aqlli utilizatsiya",
         "title": "Mashaqqatsiz tozalik",
         "subtitle": "O'zbekistonda obuna asosida axlatni muntazam olib ketish va saralash bo'yicha birinchi xizmat. Vaqtingizni tejang va ekologiyaga yordam bering.",
-        "cta": "Obuna bo'lish"
+        "cta": "Obuna bo'lish",
+        "title_part1": "Mashaqqatsiz",
+        "title_part2": "tozalik"
     },
     "problem": {
         "title": "Axlatdan charchadingizmi?",
@@ -23,7 +25,9 @@
         "solution_title": "TozaGo yondashuvi",
         "solution_desc1": "Hovlida doimo toza qutilar",
         "solution_desc2": "Xatolarsiz saralash bizning zimmamizda",
-        "solution_desc3": "Siz dam olasiz, biz ishlaymiz"
+        "solution_desc3": "Siz dam olasiz, biz ishlaymiz",
+        "solution_part1": "TozaGo",
+        "solution_part2": "yondashuvi"
     },
     "solution": {
         "title": "Biz buni o'z zimmamizga olamiz",
@@ -121,6 +125,13 @@
         "message": "Xabar"
     },
     "footer": {
-        "rights": "© 2026 TozaGo. Barcha huquqlar himoyalangan."
+        "rights": "© 2026 TozaGo. Barcha huquqlar himoyalangan.",
+        "company": "Kompaniya",
+        "about": "Biz haqimizda",
+        "contacts": "Kontaktlar",
+        "faq": "FAQ",
+        "subscribe": "Obuna bo'ling",
+        "privacy": "Maxfiylik siyosati",
+        "terms": "Foydalanish shartlari"
     }
 }

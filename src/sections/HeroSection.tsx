@@ -36,8 +36,8 @@ export function HeroSection() {
 
                     <AnimatedContainer animation="fade-up" delay={0.2}>
                         <h1 className="hero-title">
-                            <span className="text-gradient">{t('hero.title').split(' ')[0]}</span>{' '}
-                            {t('hero.title').split(' ').slice(1).join(' ')}
+                            <span className="text-gradient">{t('hero.title_part1')}</span>{' '}
+                            {t('hero.title_part2')}
                         </h1>
                     </AnimatedContainer>
 

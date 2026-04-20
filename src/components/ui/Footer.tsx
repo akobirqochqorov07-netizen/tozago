@@ -31,16 +31,16 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="footer-title">Компания</h4>
+                        <h4 className="footer-title">{t('footer.company')}</h4>
                         <ul className="footer-links">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">{t('footer.about')}</a></li>
+                            <li><a href="#">{t('footer.contacts')}</a></li>
+                            <li><a href="#">{t('footer.faq')}</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="footer-title">Подписаться</h4>
+                        <h4 className="footer-title">{t('footer.subscribe')}</h4>
                         <div className="social-links">
                             <a href="#" aria-label="Mail"><Mail size={24} /></a>
                             <a href="#" aria-label="Phone"><Phone size={24} /></a>
@@ -52,8 +52,8 @@ export function Footer() {
                 <div className="footer-bottom">
                     <p>{t('footer.rights')}</p>
                     <div style={{ display: 'flex', gap: '1rem' }}>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
+                        <a href="#">{t('footer.privacy')}</a>
+                        <a href="#">{t('footer.terms')}</a>
                     </div>
                 </div>
             </div>

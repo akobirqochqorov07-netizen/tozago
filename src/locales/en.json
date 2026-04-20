@@ -11,7 +11,9 @@
         "badge": "Smart disposal in Tashkent",
         "title": "Effortless Cleanliness",
         "subtitle": "Uzbekistan's first subscription-based regular waste collection and sorting service. Save time and help the environment.",
-        "cta": "Subscribe Now"
+        "cta": "Subscribe Now",
+        "title_part1": "Effortless",
+        "title_part2": "Cleanliness"
     },
     "problem": {
         "title": "Tired of Trash?",
@@ -23,7 +25,9 @@
         "solution_title": "TozaGo approach",
         "solution_desc1": "Always clean bins in the yard",
         "solution_desc2": "Error-free sorting on our side",
-        "solution_desc3": "You rest, we work"
+        "solution_desc3": "You rest, we work",
+        "solution_part1": "TozaGo",
+        "solution_part2": "approach"
     },
     "solution": {
         "title": "We Take Care of It",
@@ -121,6 +125,13 @@
         "message": "Message"
     },
     "footer": {
-        "rights": "© 2026 TozaGo. All rights reserved."
+        "rights": "© 2026 TozaGo. All rights reserved.",
+        "company": "Company",
+        "about": "About Us",
+        "contacts": "Contacts",
+        "faq": "FAQ",
+        "subscribe": "Subscribe",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
     }
 }

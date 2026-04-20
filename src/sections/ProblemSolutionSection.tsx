@@ -47,7 +47,7 @@ export function ProblemSolutionSection() {
                     <AnimatedContainer animation="fade-up" delay={0.4}>
                         <div className="solution-card">
                             <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                <span className="text-gradient">TozaGo</span> {t('problem.solution_title').split(' ')[1] || 'yondashuvi'}
+                                <span className="text-gradient">{t('problem.solution_part1')}</span> {t('problem.solution_part2')}
                             </h3>
                             <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>{t('solution.desc')}</p>
 
