@@ -98,7 +98,7 @@ export function ContactSection() {
                                     type="text"
                                     className="form-input"
                                     required
-                                    placeholder="Ivan Ivanov"
+                                    placeholder={t('contact.name_placeholder')}
                                     value={formData.name}
                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 />

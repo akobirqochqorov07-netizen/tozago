@@ -89,6 +89,7 @@
         "title": "Contact Us",
         "desc": "Leave your details and we will contact you within 15 minutes to process your subscription and answer questions.",
         "name": "Your Name",
+        "name_placeholder": "Name",
         "phone": "Phone Number",
         "message": "Message (Optional)",
         "message_placeholder": "Any questions about tariffs?",

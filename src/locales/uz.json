@@ -89,6 +89,7 @@
         "title": "Biz bilan bog'lanish",
         "desc": "Ma'lumotlaringizni qoldiring va biz obunani rasmiylashtirish yoki savollaringizga javob berish uchun 15 daqiqa ichida siz bilan bog'lanamiz.",
         "name": "Ismingiz",
+        "name_placeholder": "Name",
         "phone": "Telefon raqam",
         "message": "Xabar (ixtiyoriy)",
         "message_placeholder": "Tariflar bo'yicha savollaringiz bormi?",
