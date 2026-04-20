@@ -6,6 +6,9 @@ import { Moon, Sun, Globe, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 
+// Import images correctly for Vite
+import logoImg from '../../assets/logo.png';
+
 export function Navbar() {
     const { theme, toggleTheme } = useTheme();
     const { language, setLanguage, t } = useLanguage();
@@ -31,7 +34,7 @@ export function Navbar() {
             <div className="container nav-container" style={{ paddingLeft: '0', maxWidth: '1400px' }}>
                 {/* Logo: text removed, enlarged, moved left by reducing padding on container/logo */}
                 <a href="#" className="nav-logo" style={{ marginLeft: '-1rem' }}>
-                    <img src="/src/assets/logo.png" alt="TozaGo Logo" className="logo-img" />
+                    <img src={logoImg} alt="TozaGo Logo" className="logo-img" />
                 </a>
 
                 <div className="nav-links">

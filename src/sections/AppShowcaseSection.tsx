@@ -1,8 +1,11 @@
-
 import { useLanguage } from '../contexts/LanguageContext';
 import { Smartphone, Bell, PieChart } from 'lucide-react';
 import { AnimatedContainer } from '../components/ui/AnimatedContainer';
 import './AppShowcaseSection.css';
+
+// Import images correctly for Vite
+import phoneMockupImg from '../assets/mockup1.png';
+import logoImg from '../assets/logo.png';
 
 export function AppShowcaseSection() {
     const { language } = useLanguage();
@@ -16,7 +19,7 @@ export function AppShowcaseSection() {
                         {/* Using the user uploaded mockup */}
                         <div style={{ position: 'relative', width: '500px', height: '700px', zIndex: 1, transform: 'scale(1.15) translateY(-20px)' }}>
                             <img
-                                src="/src/assets/mockup1.png"
+                                src={phoneMockupImg}
                                 alt="Phone Mockup"
                                 style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 40px 60px rgba(0,0,0,0.4))' }}
                             />
@@ -37,7 +40,7 @@ export function AppShowcaseSection() {
                                 backdropFilter: 'blur(10px)',
                                 zIndex: 10
                             }}>
-                                <img src="/src/assets/logo.png" alt="TozaGo" style={{ height: '32px' }} />
+                                <img src={logoImg} alt="TozaGo" style={{ height: '32px' }} />
                             </div>
                         </div>
                     </div>

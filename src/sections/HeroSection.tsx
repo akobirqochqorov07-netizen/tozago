@@ -4,6 +4,10 @@ import { ArrowRight } from 'lucide-react';
 import { AnimatedContainer } from '../components/ui/AnimatedContainer';
 import './HeroSection.css';
 
+// Import images correctly for Vite
+import heroImage from '../assets/hero-image.png';
+import appMockup from '../assets/mockup2.png';
+
 export function HeroSection() {
     const { t } = useLanguage();
     const { scrollY } = useScroll();
@@ -20,7 +24,7 @@ export function HeroSection() {
             <motion.div className="hero-bg-wrapper" style={{ y: yImage }}>
                 <div
                     className="hero-parallax-bg"
-                    style={{ backgroundImage: 'url(/src/assets/hero-image.png)' }}
+                    style={{ backgroundImage: `url(${heroImage})` }}
                 />
             </motion.div>
 
@@ -62,7 +66,7 @@ export function HeroSection() {
                     >
                         {/* Using the realistic User uploaded mockup */}
                         <img
-                            src="/src/assets/mockup2.png"
+                            src={appMockup}
                             alt="TozaGo App Screen Mockup"
                             style={{
                                 width: '100%',

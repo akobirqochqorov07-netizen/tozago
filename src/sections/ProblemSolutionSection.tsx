@@ -1,8 +1,11 @@
-
 import { useLanguage } from '../contexts/LanguageContext';
 import { XCircle, CheckCircle2, ArrowRight } from 'lucide-react';
 import { AnimatedContainer } from '../components/ui/AnimatedContainer';
 import './ProblemSolutionSection.css';
+
+// Import images correctly for Vite
+import workerTruckImg from '../assets/eco_worker_truck.png';
+import logoImg from '../assets/logo.png';
 
 export function ProblemSolutionSection() {
     const { t } = useLanguage();
@@ -64,12 +67,12 @@ export function ProblemSolutionSection() {
                             </ul>
                             <div style={{ marginTop: '2rem', position: 'relative', borderRadius: '1rem', overflow: 'hidden' }}>
                                 <img
-                                    src="/src/assets/eco_worker_truck.png"
+                                    src={workerTruckImg}
                                     alt="TozaGo Worker"
                                     style={{ width: '100%', height: '200px', objectFit: 'cover' }}
                                 />
                                 <div style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'rgba(255,255,255,0.9)', padding: '0.5rem 1rem', borderRadius: '0.5rem', boxShadow: 'var(--shadow-md)', backdropFilter: 'blur(10px)' }}>
-                                    <img src="/src/assets/logo.png" alt="TozaGo" style={{ height: '24px' }} />
+                                    <img src={logoImg} alt="TozaGo" style={{ height: '24px' }} />
                                 </div>
                             </div>
                         </div>

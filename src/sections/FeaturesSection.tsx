@@ -3,6 +3,10 @@ import { Recycle, CalendarClock, Leaf, Award, Headset } from 'lucide-react';
 import { AnimatedContainer } from '../components/ui/AnimatedContainer';
 import './FeaturesSection.css';
 
+// Import images correctly for Vite
+import wasteSortingImg from '../assets/eco_waste_sorting.png';
+import logoImg from '../assets/logo.png';
+
 export function FeaturesSection() {
     const { t, language } = useLanguage();
 
@@ -19,12 +23,12 @@ export function FeaturesSection() {
                     <div className="features-sticky-left">
                         <AnimatedContainer animation="fade-up" delay={0.1} className="sticky-image-wrapper">
                             <img
-                                src="/src/assets/eco_waste_sorting.png"
+                                src={wasteSortingImg}
                                 alt="Waste Sorting Infrastructure"
                                 className="sticky-bg-img"
                             />
                             <div className="sticky-overlay-card">
-                                <img src="/src/assets/logo.png" alt="TozaGo" style={{ height: '32px' }} />
+                                <img src={logoImg} alt="TozaGo" style={{ height: '32px' }} />
                                 <div className="overlay-text">
                                     {language === 'ru' ? 'Современная эко-инфраструктура' : (language === 'en' ? 'Modern Eco-Infrastructure' : 'Zamonaviy eko-infratuzilma')}
                                 </div>

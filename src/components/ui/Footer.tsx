@@ -2,6 +2,9 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import { Mail, Phone, Globe } from 'lucide-react';
 import './Footer.css';
 
+// Import images correctly for Vite
+import logoImg from '../../assets/logo.png';
+
 export function Footer() {
     const { t } = useLanguage();
 
@@ -11,7 +14,7 @@ export function Footer() {
                 <div className="footer-grid">
                     <div className="footer-brand">
                         <a href="#" className="nav-logo text-gradient" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-                            <img src="/src/assets/logo.png" alt="TozaGo Logo" style={{ height: '32px' }} />
+                            <img src={logoImg} alt="TozaGo Logo" style={{ height: '32px' }} />
                             TozaGo
                         </a>
                         <p className="footer-desc">
