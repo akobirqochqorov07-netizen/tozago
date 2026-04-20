@@ -15,7 +15,7 @@ export function ProblemSolutionSection() {
             <div className="container">
                 <AnimatedContainer animation="fade-up">
                     <h2 className="section-title">{t('problem.title')}</h2>
-                    <p className="section-subtitle">Оставьте заботы нам, а сами наслаждайтесь чистотой и уютом.</p>
+                    <p className="section-subtitle">{t('problem.subtitle')}</p>
                 </AnimatedContainer>
 
                 <div className="ps-grid relative">
@@ -26,7 +26,7 @@ export function ProblemSolutionSection() {
 
                     <AnimatedContainer animation="fade-up" delay={0.2}>
                         <div className="problem-card">
-                            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>Как было раньше</h3>
+                            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t('problem.before_title')}</h3>
                             <ul className="ps-list">
                                 <li className="ps-list-item">
                                     <div className="ps-icon-prob"><XCircle size={24} /></div>
@@ -47,14 +47,14 @@ export function ProblemSolutionSection() {
                     <AnimatedContainer animation="fade-up" delay={0.4}>
                         <div className="solution-card">
                             <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                <span className="text-gradient">TozaGo</span> подход
+                                <span className="text-gradient">TozaGo</span> {t('problem.solution_title').split(' ')[1] || 'yondashuvi'}
                             </h3>
                             <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>{t('solution.desc')}</p>
 
                             <ul className="ps-list" style={{ marginTop: 0 }}>
                                 <li className="ps-list-item">
                                     <div className="ps-icon-sol"><CheckCircle2 size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem', fontWeight: 500 }}>Всегда чистые урны во дворе</span>
+                                    <span style={{ fontSize: '1.125rem', fontWeight: 500 }}>{t('problem.solution_desc1')}</span>
                                 </li>
                                 <li className="ps-list-item">
                                     <div className="ps-icon-sol"><CheckCircle2 size={24} /></div>
@@ -62,7 +62,7 @@ export function ProblemSolutionSection() {
                                 </li>
                                 <li className="ps-list-item">
                                     <div className="ps-icon-sol"><CheckCircle2 size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem', fontWeight: 500 }}>Вы отдыхаете, мы работаем</span>
+                                    <span style={{ fontSize: '1.125rem', fontWeight: 500 }}>{t('problem.solution_desc3')}</span>
                                 </li>
                             </ul>
                             <div style={{ marginTop: '2rem', position: 'relative', borderRadius: '1rem', overflow: 'hidden' }}>

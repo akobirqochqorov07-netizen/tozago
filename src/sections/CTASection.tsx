@@ -12,7 +12,7 @@ export function CTASection() {
             <div className="container cta-content">
                 <AnimatedContainer animation="fade-up">
                     <h2 className="cta-title">{t('cta.title')}</h2>
-                    <p className="cta-subtitle">Присоединяйтесь к тысячам семей, которые уже выбрали комфорт и заботу о природе с TozaGo.</p>
+                    <p className="cta-subtitle">{t('cta.subtitle')}</p>
                 </AnimatedContainer>
 
                 <AnimatedContainer animation="scale-up" delay={0.2}>

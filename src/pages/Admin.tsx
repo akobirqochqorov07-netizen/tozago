@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './Admin.css';
 
 export function Admin() {
+    const { t } = useLanguage();
     const [isAuth, setIsAuth] = useState(false);
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
@@ -11,7 +13,7 @@ export function Admin() {
         if (login === 'admin' && password === 'admin 123') {
             setIsAuth(true);
         } else {
-            alert('Invalid credentials');
+            alert(t('admin.invalid'));
         }
     };
 
@@ -23,10 +25,10 @@ export function Admin() {
         return (
             <div className="admin-login-container">
                 <form className="admin-login-card" onSubmit={handleLogin}>
-                    <h2>Вход в панель управления</h2>
+                    <h2>{t('admin.login_title')}</h2>
 
                     <div className="form-group">
-                        <label className="form-label">Логин</label>
+                        <label className="form-label">{t('admin.login_label')}</label>
                         <input
                             className="form-input"
                             type="text"
@@ -37,7 +39,7 @@ export function Admin() {
                     </div>
 
                     <div className="form-group">
-                        <label className="form-label">Пароль</label>
+                        <label className="form-label">{t('admin.password_label')}</label>
                         <input
                             className="form-input"
                             type="password"
@@ -48,7 +50,7 @@ export function Admin() {
                     </div>
 
                     <button className="btn-primary" type="submit" style={{ width: '100%', justifyContent: 'center' }}>
-                        Войти
+                        {t('admin.login_button')}
                     </button>
                 </form>
             </div>
@@ -57,33 +59,33 @@ export function Admin() {
 
     return (
         <div className="admin-dashboard container">
-            <h1 className="admin-title">Панель Администратора TozaGo</h1>
+            <h1 className="admin-title">{t('admin.dashboard_title')}</h1>
 
             <div className="admin-grid">
                 <div className="admin-section">
-                    <h2>Транзакции (Подписки)</h2>
+                    <h2>{t('admin.transactions_title')}</h2>
                     <div className="table-responsive">
                         <table className="admin-table">
                             <thead>
                                 <tr>
-                                    <th>Дата</th>
-                                    <th>ID Пользователя / Имя</th>
-                                    <th>Тариф</th>
-                                    <th>Сумма</th>
-                                    <th>Статус</th>
+                                    <th>{t('admin.date')}</th>
+                                    <th>{t('admin.user_name')}</th>
+                                    <th>{t('admin.plan')}</th>
+                                    <th>{t('admin.amount')}</th>
+                                    <th>{t('admin.status')}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {transactions.length === 0 ? (
-                                    <tr><td colSpan={5} style={{ textAlign: 'center', padding: '1rem' }}>Нет транзакций</td></tr>
+                                    <tr><td colSpan={5} style={{ textAlign: 'center', padding: '1rem' }}>{t('admin.no_transactions')}</td></tr>
                                 ) : (
                                     transactions.map((t: any, idx: number) => (
                                         <tr key={idx}>
                                             <td>{new Date(t.date).toLocaleString()}</td>
-                                            <td>{t.name || 'Аноним'} {t.phone ? `(${t.phone})` : ''}</td>
+                                            <td>{t.name || t('admin.anonymous')} {t.phone ? `(${t.phone})` : ''}</td>
                                             <td>{t.plan}</td>
                                             <td style={{ fontWeight: 'bold' }}>{t.amount} UZS</td>
-                                            <td style={{ color: 'var(--brand-primary)' }}>Оплачено</td>
+                                            <td style={{ color: 'var(--brand-primary)' }}>{t('admin.paid')}</td>
                                         </tr>
                                     ))
                                 )}
@@ -93,20 +95,20 @@ export function Admin() {
                 </div>
 
                 <div className="admin-section">
-                    <h2>Заявки с Формы Контактов</h2>
+                    <h2>{t('admin.contacts_title')}</h2>
                     <div className="table-responsive">
                         <table className="admin-table">
                             <thead>
                                 <tr>
-                                    <th>Время</th>
-                                    <th>Имя</th>
-                                    <th>Телефон</th>
-                                    <th>Сообщение</th>
+                                    <th>{t('admin.time')}</th>
+                                    <th>{t('admin.name')}</th>
+                                    <th>{t('admin.phone')}</th>
+                                    <th>{t('admin.message')}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {contacts.length === 0 ? (
-                                    <tr><td colSpan={4} style={{ textAlign: 'center', padding: '1rem' }}>Нет новых заявок</td></tr>
+                                    <tr><td colSpan={4} style={{ textAlign: 'center', padding: '1rem' }}>{t('admin.no_contacts')}</td></tr>
                                 ) : (
                                     contacts.map((c: any, idx: number) => (
                                         <tr key={idx}>

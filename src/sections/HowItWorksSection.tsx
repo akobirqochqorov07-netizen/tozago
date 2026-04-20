@@ -32,7 +32,7 @@ export function HowItWorksSection() {
                             <div className="step-number">1</div>
                             <div className="step-content">
                                 <h3 className="step-title">{t('how.step1')}</h3>
-                                <p style={{ color: 'var(--text-secondary)' }}>Выберите подходящий тариф и оставьте заявку на сайте или в приложении.</p>
+                                <p style={{ color: 'var(--text-secondary)' }}>{t('how.step1_desc')}</p>
                             </div>
                         </div>
                     </AnimatedContainer>
@@ -42,7 +42,7 @@ export function HowItWorksSection() {
                             <div className="step-number">2</div>
                             <div className="step-content">
                                 <h3 className="step-title">{t('how.step2')}</h3>
-                                <p style={{ color: 'var(--text-secondary)' }}>Мы привезем удобные эко-контейнеры для сортировки к вам домой.</p>
+                                <p style={{ color: 'var(--text-secondary)' }}>{t('how.step2_desc')}</p>
                             </div>
                         </div>
                     </AnimatedContainer>
@@ -52,7 +52,7 @@ export function HowItWorksSection() {
                             <div className="step-number">3</div>
                             <div className="step-content">
                                 <h3 className="step-title">{t('how.step3')}</h3>
-                                <p style={{ color: 'var(--text-secondary)' }}>В назначенные дни мы тихо забираем мусор, оставляя чистоту.</p>
+                                <p style={{ color: 'var(--text-secondary)' }}>{t('how.step3_desc')}</p>
                             </div>
                         </div>
                     </AnimatedContainer>

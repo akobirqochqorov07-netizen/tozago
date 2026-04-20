@@ -95,7 +95,7 @@ export function Navbar() {
                     </button>
 
                     <a href="#contact" className="btn-primary get-started-btn">
-                        {language === 'ru' ? 'Связаться' : (language === 'en' ? 'Contact Us' : "Bog'lanish")}
+                        {t('nav.contact')}
                     </a>
                 </div>
             </div>

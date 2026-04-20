@@ -8,7 +8,7 @@ import phoneMockupImg from '../assets/mockup1.png';
 import logoImg from '../assets/logo.png';
 
 export function AppShowcaseSection() {
-    const { language } = useLanguage();
+    const { t } = useLanguage();
 
     return (
         <section className="app-showcase">
@@ -57,11 +57,11 @@ export function AppShowcaseSection() {
                             marginBottom: '1.5rem',
                             fontWeight: 800
                         }}>
-                            {language === 'ru' ? 'Управляйте в один клик' : (language === 'en' ? 'Manage in one click' : 'Bir klik bilan boshqaring')}
+                            {t('showcase.title')}
                         </h2>
                         <div style={{ position: 'relative', paddingLeft: '2rem', borderLeft: '4px solid var(--brand-primary)', marginBottom: '3rem' }}>
                             <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', fontWeight: 500, lineHeight: '1.6' }}>
-                                {language === 'ru' ? 'Наше мобильное приложение позволяет легко управлять подпиской, отслеживать график вывоза и копить эко-бонусы.' : (language === 'en' ? 'Our mobile app lets you easily manage your subscription, track pickup schedules, and earn eco-bonuses.' : "Bizning mobil ilovamiz orqali obunani qulay boshqarish, olib ketish jadvalini kuzatish va eko-bonuslar yig'ish mumkin.")}
+                                {t('showcase.desc')}
                             </p>
                         </div>
                     </AnimatedContainer>
@@ -71,8 +71,8 @@ export function AppShowcaseSection() {
                             <li className="showcase-item">
                                 <div className="showcase-icon"><Smartphone /></div>
                                 <div>
-                                    <h4 style={{ fontSize: '1.125rem', fontWeight: 600 }}>Удобный интерфейс</h4>
-                                    <p style={{ color: 'var(--text-secondary)' }}>Все настройки под рукой 24/7</p>
+                                    <h4 style={{ fontSize: '1.125rem', fontWeight: 600 }}>{t('showcase.f1_title')}</h4>
+                                    <p style={{ color: 'var(--text-secondary)' }}>{t('showcase.f1_desc')}</p>
                                 </div>
                             </li>
                         </AnimatedContainer>
@@ -81,8 +81,8 @@ export function AppShowcaseSection() {
                             <li className="showcase-item">
                                 <div className="showcase-icon"><Bell /></div>
                                 <div>
-                                    <h4 style={{ fontSize: '1.125rem', fontWeight: 600 }}>Умные уведомления</h4>
-                                    <p style={{ color: 'var(--text-secondary)' }}>Напомним накануне о вывозе мусора</p>
+                                    <h4 style={{ fontSize: '1.125rem', fontWeight: 600 }}>{t('showcase.f2_title')}</h4>
+                                    <p style={{ color: 'var(--text-secondary)' }}>{t('showcase.f2_desc')}</p>
                                 </div>
                             </li>
                         </AnimatedContainer>
@@ -91,8 +91,8 @@ export function AppShowcaseSection() {
                             <li className="showcase-item">
                                 <div className="showcase-icon"><PieChart /></div>
                                 <div>
-                                    <h4 style={{ fontSize: '1.125rem', fontWeight: 600 }}>Эко-статистика</h4>
-                                    <p style={{ color: 'var(--text-secondary)' }}>Следите за своим личным вкладом в экологию</p>
+                                    <h4 style={{ fontSize: '1.125rem', fontWeight: 600 }}>{t('showcase.f3_title')}</h4>
+                                    <p style={{ color: 'var(--text-secondary)' }}>{t('showcase.f3_desc')}</p>
                                 </div>
                             </li>
                         </AnimatedContainer>

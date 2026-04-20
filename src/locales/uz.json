@@ -4,7 +4,8 @@
         "pricing": "Tariflar",
         "howItWorks": "Qanday ishlaydi",
         "signIn": "Kirish",
-        "getStarted": "Boshlash"
+        "getStarted": "Boshlash",
+        "contact": "Bog'lanish"
     },
     "hero": {
         "badge": "Toshkentda aqlli utilizatsiya",
@@ -14,9 +15,15 @@
     },
     "problem": {
         "title": "Axlatdan charchadingizmi?",
+        "subtitle": "Zahira tashvishlarini bizga qoldiring, o'zingiz esa tozalik va qulaylikdan bahra oling.",
+        "before_title": "Oldin qanday edi",
         "desc1": "Hovlidagi to'lib toshgan qutilar",
         "desc2": "O'zingiz saralash va olib chiqish zarurati",
-        "desc3": "Maishiy ikir-chikirlarga shaxsiy vaqtni sarflash"
+        "desc3": "Maishiy ikir-chikirlarga shaxsiy vaqtni sarflash",
+        "solution_title": "TozaGo yondashuvi",
+        "solution_desc1": "Hovlida doimo toza qutilar",
+        "solution_desc2": "Xatolarsiz saralash bizning zimmamizda",
+        "solution_desc3": "Siz dam olasiz, biz ishlaymiz"
     },
     "solution": {
         "title": "Biz buni o'z zimmamizga olamiz",
@@ -24,21 +31,46 @@
     },
     "features": {
         "title": "Nega TozaGoni tanlashadi",
+        "eco_infrastructure": "Zamonaviy eko-infratuzilma",
         "f1_title": "Saralash",
         "f1_desc": "Qayta ishlanadigan materiallarni o'zimiz saralaymiz",
         "f2_title": "Obuna",
         "f2_desc": "Oyiga bir marta qulay to'lov",
         "f3_title": "Qulaylik",
-        "f3_desc": "Yo'lakda paketlar yo'q"
+        "f3_desc": "Yo'lakda paketlar yo'q",
+        "f4_title": "Geymifikatsiya va Eko-ballar",
+        "f4_desc": "Har bir to'g'ri olib chiqish uchun ball to'plang va ularni eko-sovg'alar yoki chegirmalarga almashtiring.",
+        "f5_title": "24/7 Raqamli Qo'llab-quvvatlash",
+        "f5_desc": "Bizning botimiz va dispetcherlar guruhimiz doim aloqada. Har qanday olib chiqish muammolarini daqiqalarda hal qilamiz."
     },
     "how": {
         "title": "Obuna qanday ishlaydi",
         "step1": "Ariza qoldiring",
+        "step1_desc": "Mos tarifni tanlang va sayt yoki ilova orqali ariza qoldiring.",
         "step2": "Konteynerlarni oling",
-        "step3": "Biz axlatni haftasiga 3 marta olib ketamiz"
+        "step2_desc": "Biz uyingizga saralash uchun qulay eko-konteynerlarni yetkazib beramiz.",
+        "step3": "Biz axlatni haftasiga 3 marta olib ketamiz",
+        "step3_desc": "Belgilangan kunlarda biz shovqinsiz axlatni olib ketamiz va tozalik qoldiramiz."
+    },
+    "showcase": {
+        "title": "Bir klik bilan boshqaring",
+        "desc": "Bizning mobil ilovamiz orqali obunani qulay boshqarish, olib ketish jadvalini kuzatish va eko-bonuslar yig'ish mumkin.",
+        "f1_title": "Qulay interfeys",
+        "f1_desc": "Barcha sozlamalar 24/7 qo'lingizda",
+        "f2_title": "Aqlli bildirishnomalar",
+        "f2_desc": "Axlat olib ketilishidan oldin eslatib o'tamiz",
+        "f3_title": "Eko-statistika",
+        "f3_desc": "Ekologiyaga qo'shgan shaxsiy hissangizni kuzatib boring"
     },
     "pricing": {
         "title": "Oddiy va tushunarli tariflar",
+        "popular": "Ommabop",
+        "select": "Tanlash",
+        "alert_payment": "Tarif uchun to'lov muvaffaqiyatli simulyatsiya qilindi.\nAdmin panelidagi 'Tranzaksiyalar' bo'limini tekshiring (/admin).",
+        "containers_2": "2 ta konteyner berilishi",
+        "containers_3": "3 ta konteyner berilishi",
+        "no_bonus": "Eko-bonuslarsiz",
+        "vip_support": "VIP Qo'llab-quvvatlash",
         "basic_title": "Basic",
         "basic_price": "50 000 UZS/oy",
         "basic_desc": "Haftada 2 marta olib ketish",
@@ -49,9 +81,44 @@
         "premium_price": "120 000 UZS/oy",
         "premium_desc": "Har kuni olib ketish + To'liq saralash"
     },
+    "contact": {
+        "title": "Biz bilan bog'lanish",
+        "desc": "Ma'lumotlaringizni qoldiring va biz obunani rasmiylashtirish yoki savollaringizga javob berish uchun 15 daqiqa ichida siz bilan bog'lanamiz.",
+        "name": "Ismingiz",
+        "phone": "Telefon raqam",
+        "message": "Xabar (ixtiyoriy)",
+        "message_placeholder": "Tariflar bo'yicha savollaringiz bormi?",
+        "submit": "Ariza yuborish",
+        "success": "Ariza muvaffaqiyatli yuborildi!",
+        "error": "Xatolik yuz berdi. Keyinroq qayta urinib ko'ring."
+    },
     "cta": {
         "title": "Shaharni tozaroq qilishga tayyormisiz?",
+        "subtitle": "TozaGo bilan allaqachon qulaylik va tabiat haqida qayg'urishni tanlagan minglab oilalarga qo'shiling.",
         "button": "Hozir qo'shilish"
+    },
+    "admin": {
+        "login_title": "Boshqaruv paneliga kirish",
+        "login_label": "Login",
+        "password_label": "Parol",
+        "login_button": "Kirish",
+        "invalid": "Noto'g'ri ma'lumotlar",
+        "dashboard_title": "TozaGo Administrator paneli",
+        "transactions_title": "Tranzaksiyalar (Obunalar)",
+        "contacts_title": "Aloqa formasidan arizalar",
+        "date": "Sana",
+        "user_name": "Foydalanuvchi ID / Ismi",
+        "plan": "Tarif",
+        "amount": "Summa",
+        "status": "Holat",
+        "no_transactions": "Tranzaksiyalar yo'q",
+        "no_contacts": "Yangi arizalar yo'q",
+        "anonymous": "Anonim",
+        "paid": "To'langan",
+        "time": "Vaqt",
+        "name": "Ism",
+        "phone": "Telefon",
+        "message": "Xabar"
     },
     "footer": {
         "rights": "© 2026 TozaGo. Barcha huquqlar himoyalangan."

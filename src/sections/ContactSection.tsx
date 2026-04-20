@@ -8,7 +8,7 @@ import './ContactSection.css';
 import logoImg from '../assets/logo.png';
 
 export function ContactSection() {
-    const { language } = useLanguage();
+    const { t } = useLanguage();
     const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -73,10 +73,10 @@ export function ContactSection() {
             <div className="container contact-grid">
                 <AnimatedContainer animation="fade-up" className="contact-info">
                     <h2>
-                        {language === 'ru' ? 'Свяжитесь с нами' : (language === 'en' ? 'Contact Us' : "Biz bilan bog'lanish")}
+                        {t('contact.title')}
                     </h2>
                     <p className="contact-desc">
-                        {language === 'ru' ? 'Оставьте свои данные, и мы свяжемся с вами в течение 15 минут для оформления подписки и ответа на вопросы.' : (language === 'en' ? 'Leave your details and we will contact you within 15 minutes to process your subscription and answer questions.' : "Ma'lumotlaringizni qoldiring va biz obunani rasmiylashtirish yoki savollaringizga javob berish uchun 15 daqiqa ichida siz bilan bog'lanamiz.")}
+                        {t('contact.desc')}
                     </p>
 
                     {/* Logo integrated nicely into contact info to show branding */}
@@ -93,7 +93,7 @@ export function ContactSection() {
                     <div className="contact-form-card">
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
-                                <label className="form-label">{language === 'ru' ? 'Ваше имя' : (language === 'en' ? 'Your Name' : 'Ismingiz')}</label>
+                                <label className="form-label">{t('contact.name')}</label>
                                 <input
                                     type="text"
                                     className="form-input"
@@ -105,7 +105,7 @@ export function ContactSection() {
                             </div>
 
                             <div className="form-group">
-                                <label className="form-label">{language === 'ru' ? 'Телефон' : (language === 'en' ? 'Phone Number' : 'Telefon raqam')}</label>
+                                <label className="form-label">{t('contact.phone')}</label>
                                 <input
                                     type="tel"
                                     className="form-input"
@@ -117,10 +117,10 @@ export function ContactSection() {
                             </div>
 
                             <div className="form-group">
-                                <label className="form-label">{language === 'ru' ? 'Сообщение (необязательно)' : (language === 'en' ? 'Message (Optional)' : 'Xabar (ixtiyoriy)')}</label>
+                                <label className="form-label">{t('contact.message')}</label>
                                 <textarea
                                     className="form-textarea"
-                                    placeholder={language === 'ru' ? 'Есть вопросы по тарифам?' : 'Any questions?'}
+                                    placeholder={t('contact.message_placeholder')}
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                 ></textarea>
@@ -129,7 +129,7 @@ export function ContactSection() {
                             <button type="submit" className="btn-primary submit-btn" disabled={loading}>
                                 {loading ? <Loader2 className="spinner" /> : (
                                     <>
-                                        {language === 'ru' ? 'Отправить заявку' : (language === 'en' ? 'Send Request' : 'Ariza yuborish')}
+                                        {t('contact.submit')}
                                         <Send size={20} />
                                     </>
                                 )}
@@ -137,12 +137,12 @@ export function ContactSection() {
 
                             {status === 'success' && (
                                 <div className="form-status success">
-                                    {language === 'ru' ? 'Заявка успешно отправлена!' : 'Request sent successfully!'}
+                                    {t('contact.success')}
                                 </div>
                             )}
                             {status === 'error' && (
                                 <div className="form-status error">
-                                    {language === 'ru' ? 'Произошла ошибка. Попробуйте позже.' : 'An error occurred. Try again.'}
+                                    {t('contact.error')}
                                 </div>
                             )}
                         </form>

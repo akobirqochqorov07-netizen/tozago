@@ -4,7 +4,8 @@
         "pricing": "Pricing",
         "howItWorks": "How it works",
         "signIn": "Sign In",
-        "getStarted": "Get Started"
+        "getStarted": "Get Started",
+        "contact": "Contact Us"
     },
     "hero": {
         "badge": "Smart disposal in Tashkent",
@@ -14,9 +15,15 @@
     },
     "problem": {
         "title": "Tired of Trash?",
+        "subtitle": "Leave the worries to us, and enjoy cleanliness and comfort yourself.",
+        "before_title": "How it was before",
         "desc1": "Overflowing bins in the yard",
         "desc2": "Having to sort and dispose yourself",
-        "desc3": "Wasting personal time on chores"
+        "desc3": "Wasting personal time on chores",
+        "solution_title": "TozaGo approach",
+        "solution_desc1": "Always clean bins in the yard",
+        "solution_desc2": "Error-free sorting on our side",
+        "solution_desc3": "You rest, we work"
     },
     "solution": {
         "title": "We Take Care of It",
@@ -24,21 +31,46 @@
     },
     "features": {
         "title": "Why Choose TozaGo",
+        "eco_infrastructure": "Modern Eco-Infrastructure",
         "f1_title": "Sorting",
         "f1_desc": "We sort recyclables ourselves",
         "f2_title": "Subscription",
         "f2_desc": "Convenient once-a-month payment",
         "f3_title": "Comfort",
-        "f3_desc": "No bags in the hallway"
+        "f3_desc": "No bags in the hallway",
+        "f4_title": "Gamification & Eco-Points",
+        "f4_desc": "Earn points for every proper pickup and exchange them for unique eco-prizes or discounts.",
+        "f5_title": "24/7 Digital Support",
+        "f5_desc": "Our bot and dispatch team are always in touch. Resolving any pickup issues in minutes."
     },
     "how": {
         "title": "How Subscription Works",
         "step1": "Leave a request",
+        "step1_desc": "Choose a suitable tariff and leave a request on the website or in the app.",
         "step2": "Receive containers",
-        "step3": "We collect waste 3 times a week"
+        "step2_desc": "We will bring convenient eco-containers for sorting to your home.",
+        "step3": "We collect waste 3 times a week",
+        "step3_desc": "On appointed days we quietly pick up the garbage, leaving cleanliness."
+    },
+    "showcase": {
+        "title": "Manage in one click",
+        "desc": "Our mobile app lets you easily manage your subscription, track pickup schedules, and earn eco-bonuses.",
+        "f1_title": "User-friendly interface",
+        "f1_desc": "All settings at hand 24/7",
+        "f2_title": "Smart notifications",
+        "f2_desc": "We will remind you about garbage collection the day before",
+        "f3_title": "Eco-statistics",
+        "f3_desc": "Track your personal contribution to the environment"
     },
     "pricing": {
         "title": "Simple and Clear Pricing",
+        "popular": "Popular",
+        "select": "Select",
+        "alert_payment": "Payment for plan simulated.\nCheck the Admin dashboard (/admin).",
+        "containers_2": "2 containers provided",
+        "containers_3": "3 containers provided",
+        "no_bonus": "No eco-bonuses",
+        "vip_support": "VIP Support",
         "basic_title": "Basic",
         "basic_price": "50,000 UZS/mo",
         "basic_desc": "Collection 2 times a week",
@@ -49,9 +81,44 @@
         "premium_price": "120,000 UZS/mo",
         "premium_desc": "Daily collection + Turnkey sorting"
     },
+    "contact": {
+        "title": "Contact Us",
+        "desc": "Leave your details and we will contact you within 15 minutes to process your subscription and answer questions.",
+        "name": "Your Name",
+        "phone": "Phone Number",
+        "message": "Message (Optional)",
+        "message_placeholder": "Any questions about tariffs?",
+        "submit": "Send Request",
+        "success": "Request sent successfully!",
+        "error": "An error occurred. Try again."
+    },
     "cta": {
         "title": "Ready to Make the City Cleaner?",
+        "subtitle": "Join thousands of families who have already chosen comfort and caring for nature with TozaGo.",
         "button": "Join Now"
+    },
+    "admin": {
+        "login_title": "Login to Control Panel",
+        "login_label": "Login",
+        "password_label": "Password",
+        "login_button": "Enter",
+        "invalid": "Invalid credentials",
+        "dashboard_title": "TozaGo Admin Dashboard",
+        "transactions_title": "Transactions (Subscriptions)",
+        "contacts_title": "Requests from Contact Form",
+        "date": "Date",
+        "user_name": "User ID / Name",
+        "plan": "Plan",
+        "amount": "Amount",
+        "status": "Status",
+        "no_transactions": "No transactions",
+        "no_contacts": "No new requests",
+        "anonymous": "Anonymous",
+        "paid": "Paid",
+        "time": "Time",
+        "name": "Name",
+        "phone": "Phone",
+        "message": "Message"
     },
     "footer": {
         "rights": "© 2026 TozaGo. All rights reserved."

@@ -5,7 +5,7 @@ import { AnimatedContainer } from '../components/ui/AnimatedContainer';
 import './PricingSection.css';
 
 export function PricingSection() {
-    const { t, language } = useLanguage();
+    const { t } = useLanguage();
 
     const handlePayment = (planName: string, amount: string) => {
         const transaction = {
@@ -18,9 +18,7 @@ export function PricingSection() {
         existing.unshift(transaction);
         localStorage.setItem('tozago_transactions', JSON.stringify(existing));
 
-        alert(language === 'ru'
-            ? `Оплата тарифа ${planName} успешно инициирована.\nСмотрите вкладку "Транзакции" в панели администратора (/admin).`
-            : `Payment for ${planName} plan simulated.\nCheck the Admin dashboard (/admin).`);
+        alert(t('pricing.alert_payment').replace('${planName}', planName));
     };
 
     return (
@@ -38,11 +36,11 @@ export function PricingSection() {
                             <div className="pricing-price">{t('pricing.basic_price').split('/')[0]} <span>/{t('pricing.basic_price').split('/')[1]}</span></div>
                             <ul className="pricing-features">
                                 <li className="pricing-feature"><Check size={20} /> {t('pricing.basic_desc')}</li>
-                                <li className="pricing-feature"><Check size={20} /> Выдача 2 контейнеров</li>
-                                <li className="pricing-feature" style={{ color: 'var(--text-secondary)' }}><Check size={20} color="var(--border-color)" /> Без эко-бонусов</li>
+                                <li className="pricing-feature"><Check size={20} /> {t('pricing.containers_2')}</li>
+                                <li className="pricing-feature" style={{ color: 'var(--text-secondary)' }}><Check size={20} color="var(--border-color)" /> {t('pricing.no_bonus')}</li>
                             </ul>
                             <div className="pricing-action">
-                                <button className="btn-secondary" onClick={() => handlePayment('Basic', '50 000')}>Выбрать</button>
+                                <button className="btn-secondary" onClick={() => handlePayment('Basic', '50 000')}>{t('pricing.select')}</button>
                             </div>
                         </div>
                     </AnimatedContainer>
@@ -50,16 +48,16 @@ export function PricingSection() {
                     {/* Standard */}
                     <AnimatedContainer animation="scale-up" delay={0.2}>
                         <div className="pricing-card popular">
-                            <div className="popular-badge">Популярный</div>
+                            <div className="popular-badge">{t('pricing.popular')}</div>
                             <h3 className="pricing-title text-gradient">{t('pricing.standard_title')}</h3>
                             <div className="pricing-price">{t('pricing.standard_price').split('/')[0]} <span>/{t('pricing.standard_price').split('/')[1]}</span></div>
                             <ul className="pricing-features">
                                 <li className="pricing-feature"><Check size={20} /> {t('pricing.standard_desc').split('+')[0]}</li>
-                                <li className="pricing-feature"><Check size={20} /> Выдача 3 контейнеров</li>
+                                <li className="pricing-feature"><Check size={20} /> {t('pricing.containers_3')}</li>
                                 <li className="pricing-feature"><Check size={20} /> + {t('pricing.standard_desc').split('+')[1]}</li>
                             </ul>
                             <div className="pricing-action">
-                                <button className="btn-primary" onClick={() => handlePayment('Standard', '80 000')}>Выбрать</button>
+                                <button className="btn-primary" onClick={() => handlePayment('Standard', '80 000')}>{t('pricing.select')}</button>
                             </div>
                         </div>
                     </AnimatedContainer>
@@ -72,10 +70,10 @@ export function PricingSection() {
                             <ul className="pricing-features">
                                 <li className="pricing-feature"><Check size={20} /> {t('pricing.premium_desc').split('+')[0]}</li>
                                 <li className="pricing-feature"><Check size={20} /> {t('pricing.premium_desc').split('+')[1]}</li>
-                                <li className="pricing-feature"><Check size={20} /> VIP Поддержка</li>
+                                <li className="pricing-feature"><Check size={20} /> {t('pricing.vip_support')}</li>
                             </ul>
                             <div className="pricing-action">
-                                <button className="btn-secondary" onClick={() => handlePayment('Premium', '120 000')}>Выбрать</button>
+                                <button className="btn-secondary" onClick={() => handlePayment('Premium', '120 000')}>{t('pricing.select')}</button>
                             </div>
                         </div>
                     </AnimatedContainer>
