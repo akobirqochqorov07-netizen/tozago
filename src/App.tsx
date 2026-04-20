@@ -4,7 +4,7 @@ import { Admin } from './pages/Admin';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/tozago">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
