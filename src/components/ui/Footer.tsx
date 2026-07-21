@@ -14,7 +14,7 @@ export function Footer() {
                 <div className="footer-grid">
                     <div className="footer-brand">
                         <a href="#" className="nav-logo text-gradient" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-                            <img src={logoImg} alt="TozaGo Logo" style={{ height: '32px' }} />
+                            <img src={logoImg} alt={t('alt.logo')} style={{ height: '32px' }} />
                             TozaGo
                         </a>
                         <p className="footer-desc">
@@ -42,9 +42,9 @@ export function Footer() {
                     <div>
                         <h4 className="footer-title">{t('footer.subscribe')}</h4>
                         <div className="social-links">
-                            <a href="#" aria-label="Mail"><Mail size={24} /></a>
-                            <a href="#" aria-label="Phone"><Phone size={24} /></a>
-                            <a href="#" aria-label="Website"><Globe size={24} /></a>
+                            <a href="#" aria-label={t('footer.aria_mail')}><Mail size={24} /></a>
+                            <a href="#" aria-label={t('footer.aria_phone')}><Phone size={24} /></a>
+                            <a href="#" aria-label={t('footer.aria_website')}><Globe size={24} /></a>
                         </div>
                     </div>
                 </div>

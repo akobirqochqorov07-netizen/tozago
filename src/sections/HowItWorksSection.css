@@ -111,4 +111,40 @@
     .step-content {
         padding: 1.5rem;
     }
+
+    .step-title {
+        font-size: 1.2rem;
+    }
+
+    .how-section {
+        padding: 4rem 1rem;
+    }
+
+    .timeline {
+        margin-top: 2.5rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-number {
+        width: 52px;
+        height: 52px;
+        font-size: 1.25rem;
+    }
+
+    .step-content {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+    }
+
+    .step-title {
+        font-size: 1.05rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .timeline-line-bg,
+    .timeline-line-fill {
+        left: 26px;
+    }
 }

@@ -81,10 +81,10 @@ export function ContactSection() {
 
                     {/* Logo integrated nicely into contact info to show branding */}
                     <div style={{ padding: '2rem', background: 'var(--bg-primary)', borderRadius: '1.5rem', border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                        <img src={logoImg} alt="TozaGo" style={{ height: '48px' }} />
+                        <img src={logoImg} alt={t('alt.logo')} style={{ height: '48px' }} />
                         <div>
-                            <div style={{ fontWeight: 700, fontSize: '1.25rem' }}>TozaGo Support</div>
-                            <div style={{ color: 'var(--brand-primary)', fontWeight: 600 }}>Tashkent, Uzbekistan</div>
+                            <div style={{ fontWeight: 700, fontSize: '1.25rem' }}>{t('contact.support_title')}</div>
+                            <div style={{ color: 'var(--brand-primary)', fontWeight: 600 }}>{t('contact.location')}</div>
                         </div>
                     </div>
                 </AnimatedContainer>
@@ -110,7 +110,7 @@ export function ContactSection() {
                                     type="tel"
                                     className="form-input"
                                     required
-                                    placeholder="+998 90 123 45 67"
+                                    placeholder={t('contact.phone_placeholder')}
                                     value={formData.phone}
                                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                 />

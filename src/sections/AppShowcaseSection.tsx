@@ -5,7 +5,6 @@ import './AppShowcaseSection.css';
 
 // Import images correctly for Vite
 import phoneMockupImg from '../assets/mockup1.png';
-import logoImg from '../assets/logo.png';
 
 export function AppShowcaseSection() {
     const { t } = useLanguage();
@@ -16,32 +15,12 @@ export function AppShowcaseSection() {
                 <AnimatedContainer animation="scale-up">
                     <div className="showcase-mockup">
                         <div className="glow-circle"></div>
-                        {/* Using the user uploaded mockup */}
-                        <div style={{ position: 'relative', width: '500px', height: '700px', zIndex: 1, transform: 'scale(1.15) translateY(-20px)' }}>
+                        <div className="showcase-mockup-inner">
                             <img
                                 src={phoneMockupImg}
-                                alt="Phone Mockup"
-                                style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 40px 60px rgba(0,0,0,0.4))' }}
+                                alt={t('alt.phone_mockup')}
+                                className="showcase-mockup-img"
                             />
-
-                            {/* Overlay the TozaGo Logo on the phone screen cleanly using CSS absolute positioning */}
-                            <div style={{
-                                position: 'absolute',
-                                top: '40%',
-                                left: '50%',
-                                transform: 'translate(-50%, -50%) rotate(25deg) skewX(-15deg)', // Adjusted to match isometric angle roughly
-                                background: 'rgba(255,255,255,0.95)',
-                                padding: '0.75rem 1.5rem',
-                                borderRadius: '1rem',
-                                boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '0.5rem',
-                                backdropFilter: 'blur(10px)',
-                                zIndex: 10
-                            }}>
-                                <img src={logoImg} alt="TozaGo" style={{ height: '32px' }} />
-                            </div>
                         </div>
                     </div>
                 </AnimatedContainer>

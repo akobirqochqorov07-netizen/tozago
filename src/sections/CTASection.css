@@ -72,6 +72,28 @@
 
 @media (max-width: 768px) {
     .cta-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-section {
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-title {
+        font-size: 1.5rem;
+    }
+
+    .btn-cta {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
     }
 }

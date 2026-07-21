@@ -1,11 +1,9 @@
 import { useLanguage } from '../contexts/LanguageContext';
-import { XCircle, CheckCircle2, ArrowRight } from 'lucide-react';
 import { AnimatedContainer } from '../components/ui/AnimatedContainer';
 import './ProblemSolutionSection.css';
 
-// Import images correctly for Vite
-import workerTruckImg from '../assets/eco_worker_truck.png';
-import logoImg from '../assets/logo.png';
+import mockup3 from '../assets/mocup3.png';
+import mockup4 from '../assets/mocup4.png';
 
 export function ProblemSolutionSection() {
     const { t } = useLanguage();
@@ -18,61 +16,62 @@ export function ProblemSolutionSection() {
                     <p className="section-subtitle">{t('problem.subtitle')}</p>
                 </AnimatedContainer>
 
-                <div className="ps-grid relative">
-                    {/* Connection Line Desktop Only */}
-                    <div className="connection-line hidden md:block">
-                        <ArrowRight className="connection-arrow" size={24} />
-                    </div>
-
+                <div className="ps-grid">
                     <AnimatedContainer animation="fade-up" delay={0.2}>
-                        <div className="problem-card">
-                            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t('problem.before_title')}</h3>
-                            <ul className="ps-list">
-                                <li className="ps-list-item">
-                                    <div className="ps-icon-prob"><XCircle size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem' }}>{t('problem.desc1')}</span>
-                                </li>
-                                <li className="ps-list-item">
-                                    <div className="ps-icon-prob"><XCircle size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem' }}>{t('problem.desc2')}</span>
-                                </li>
-                                <li className="ps-list-item">
-                                    <div className="ps-icon-prob"><XCircle size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem' }}>{t('problem.desc3')}</span>
-                                </li>
-                            </ul>
+                        <div className="ps-visual">
+                            <div className="ps-image-wrapper">
+                                <img src={mockup3} alt={t('alt.before')} className="ps-image" />
+                                <div className="ps-image-badge ps-image-badge--before">
+                                    <span className="ps-badge-dot" />
+                                    {t('problem.before_label')}
+                                </div>
+                            </div>
+                            <div className="ps-text-block ps-text-block--before">
+                                <h3 className="ps-visual-title">{t('problem.before_title_card')}</h3>
+                                <p className="ps-visual-desc">{t('problem.before_desc_card')}</p>
+                                <div className="ps-tags">
+                                    <span className="ps-tag">{t('problem.tag_yard')}</span>
+                                    <span className="ps-tag">{t('problem.tag_smell')}</span>
+                                    <span className="ps-tag">{t('problem.tag_problem')}</span>
+                                </div>
+                            </div>
                         </div>
                     </AnimatedContainer>
 
-                    <AnimatedContainer animation="fade-up" delay={0.4}>
-                        <div className="solution-card">
-                            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                <span className="text-gradient">{t('problem.solution_part1')}</span> {t('problem.solution_part2')}
-                            </h3>
-                            <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>{t('solution.desc')}</p>
+                    <AnimatedContainer animation="fade-up" delay={0.35}>
+                        <div className="ps-connector">
+                            <div className="ps-connector-line-wrap">
+                                <div className="ps-connector-line ps-connector-line--top" />
+                                <div className="ps-connector-dot ps-connector-dot--top" />
+                            </div>
+                            <div className="ps-connector-label">
+                                <span>{t('problem.solution_part1')} {t('problem.solution_part2')}</span>
+                            </div>
+                            <div className="ps-connector-line-wrap">
+                                <div className="ps-connector-line ps-connector-line--bottom" />
+                                <div className="ps-connector-dot ps-connector-dot--bottom" />
+                            </div>
+                        </div>
+                    </AnimatedContainer>
 
-                            <ul className="ps-list" style={{ marginTop: 0 }}>
-                                <li className="ps-list-item">
-                                    <div className="ps-icon-sol"><CheckCircle2 size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem', fontWeight: 500 }}>{t('problem.solution_desc1')}</span>
-                                </li>
-                                <li className="ps-list-item">
-                                    <div className="ps-icon-sol"><CheckCircle2 size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem', fontWeight: 500 }}>{t('features.f1_desc')}</span>
-                                </li>
-                                <li className="ps-list-item">
-                                    <div className="ps-icon-sol"><CheckCircle2 size={24} /></div>
-                                    <span style={{ fontSize: '1.125rem', fontWeight: 500 }}>{t('problem.solution_desc3')}</span>
-                                </li>
-                            </ul>
-                            <div style={{ marginTop: '2rem', position: 'relative', borderRadius: '1rem', overflow: 'hidden' }}>
-                                <img
-                                    src={workerTruckImg}
-                                    alt="TozaGo Worker"
-                                    style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-                                />
-                                <div style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'rgba(255,255,255,0.9)', padding: '0.5rem 1rem', borderRadius: '0.5rem', boxShadow: 'var(--shadow-md)', backdropFilter: 'blur(10px)' }}>
-                                    <img src={logoImg} alt="TozaGo" style={{ height: '24px' }} />
+                    <AnimatedContainer animation="fade-up" delay={0.5}>
+                        <div className="ps-visual">
+                            <div className="ps-image-wrapper">
+                                <img src={mockup4} alt={t('alt.after')} className="ps-image" />
+                                <div className="ps-image-badge ps-image-badge--after">
+                                    <span className="ps-badge-dot ps-badge-dot--green" />
+                                    {t('problem.after_label')}
+                                </div>
+                            </div>
+                            <div className="ps-text-block ps-text-block--after">
+                                <h3 className="ps-visual-title ps-visual-title--gradient">
+                                    {t('problem.after_title_card')}
+                                </h3>
+                                <p className="ps-visual-desc">{t('problem.after_desc_card')}</p>
+                                <div className="ps-tags ps-tags--green">
+                                    <span className="ps-tag ps-tag--green">{t('problem.tag_eco')}</span>
+                                    <span className="ps-tag ps-tag--green">{t('problem.tag_fast')}</span>
+                                    <span className="ps-tag ps-tag--green">{t('problem.tag_trust')}</span>
                                 </div>
                             </div>
                         </div>
